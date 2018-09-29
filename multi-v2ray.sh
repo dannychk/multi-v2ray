@@ -192,7 +192,7 @@ updateProject() {
         git reset --hard && git pull
     else
         [[ "$DEV_MODE" == "1" ]] && BRANCH="dev" || BRANCH="master" 
-        git clone -b $BRANCH https://github.com/Jrohy/multi-v2ray
+        git clone -b $BRANCH https://github.com/dannychk/multi-v2ray
     fi
     [[ "${INSTARLL_WAY}" != "0" ]] && mv -f ~/my_domain .
 
